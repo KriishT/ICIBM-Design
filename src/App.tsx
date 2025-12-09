@@ -7,21 +7,11 @@ import {
   useNavigate,
   useLocation,
 } from "react-router-dom";
-import {
-  Calendar,
-  MapPin,
-  Mail,
-  Award,
-  FileText,
-  Menu,
-  X,
-  Download,
-} from "lucide-react";
+import { Calendar, MapPin, Mail, Menu, X } from "lucide-react";
 
 // Layout Component with Navigation
-function Layout({ children }) {
+function Layout({ children }: { children: React.ReactNode }) {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-  const navigate = useNavigate();
   const location = useLocation();
 
   const navItems = [
