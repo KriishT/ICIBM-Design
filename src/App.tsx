@@ -483,7 +483,7 @@ function ImportantDatesPage() {
     { event: "Conference early registration deadline", date: "Oct 22, 2025" },
     { event: "Travel award application deadline", date: "Nov 24, 2025" },
     { event: "Conference regular registration opens", date: "Dec 08, 2025" },
-    { event: "ICIBM conference", date: "December 20-21, 2025" },
+    { event: "ICIBM conference", date: "Dec 20-21, 2025" },
   ];
 
   return (
