@@ -7,21 +7,11 @@ import {
   useNavigate,
   useLocation,
 } from "react-router-dom";
-import {
-  Calendar,
-  MapPin,
-  Mail,
-  Award,
-  FileText,
-  Menu,
-  X,
-  Download,
-} from "lucide-react";
+import { Calendar, MapPin, Mail, Menu, X } from "lucide-react";
 
 // Layout Component with Navigation
 function Layout({ children }: { children: React.ReactNode }) {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-  const navigate = useNavigate();
   const location = useLocation();
 
   const navItems = [
@@ -44,7 +34,7 @@ function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <span className="flex items-center gap-2">
               <Calendar size={16} />
-              August 3-5, 2025
+              August 2-5, 2026
             </span>
             <span className="flex items-center gap-2">
               <MapPin size={16} />
@@ -52,11 +42,11 @@ function Layout({ children }: { children: React.ReactNode }) {
             </span>
           </div>
           <a
-            href="mailto:icibm2025@gmail.com"
+            href="mailto:icibm2026@gmail.com"
             className="flex items-center gap-2 hover:text-gray-200"
           >
             <Mail size={16} />
-            icibm2025@gmail.com
+            icibm2026@gmail.com
           </a>
         </div>
       </div>
@@ -68,7 +58,7 @@ function Layout({ children }: { children: React.ReactNode }) {
             <Link to="/" className="flex items-center gap-4">
               <div className="text-left">
                 <h1 className="text-2xl font-bold text-[#005bbb]">
-                  ICIBM 2025
+                  ICIBM 2026
                 </h1>
                 <p className="text-xs text-gray-600">
                   International Conference on Intelligent Biology and Medicine
@@ -135,19 +125,10 @@ function Layout({ children }: { children: React.ReactNode }) {
                 <p className="flex items-center gap-2">
                   <Mail size={16} />
                   <a
-                    href="mailto:icibm2025@gmail.com"
+                    href="mailto:icibm2026@gmail.com"
                     className="hover:text-white"
                   >
-                    icibm2025@gmail.com
-                  </a>
-                </p>
-                <p className="flex items-center gap-2">
-                  <Mail size={16} />
-                  <a
-                    href="mailto:icibm.common@gmail.com"
-                    className="hover:text-white"
-                  >
-                    icibm.common@gmail.com
+                    icibm2026@gmail.com
                   </a>
                 </p>
               </div>
@@ -180,7 +161,7 @@ function Layout({ children }: { children: React.ReactNode }) {
 
           <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
             <p>
-              © 2025 ICIBM - International Conference on Intelligent Biology and
+              © 2026 ICIBM - International Conference on Intelligent Biology and
               Medicine. All rights reserved.
             </p>
           </div>
@@ -196,32 +177,23 @@ function HomePage() {
 
   const keynoteSpeakers = [
     {
-      name: "Julie A. Johnson, Pharm.D.",
-      title:
-        "Professor of Pharmacology and Medicine; Director, Clinical and Translational Science Institute",
-      institution: "The Ohio State University",
-      image:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
-    },
-    {
-      name: "Jiang Bian, Ph.D.",
-      title:
-        "Professor of Cancer Informatics; Professor of Biostatistics & Health Data Science",
-      institution: "Indiana University",
+      name: "Gary Bader, Ph.D.",
+      title: "Professor",
+      institution: "University of Toronto",
       image:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
     },
     {
-      name: "Veera Baladandayuthapani, Ph.D.",
-      title: "Chair and Professor, Department of Biostatistics",
-      institution: "University of Michigan",
+      name: "To Be Announced",
+      title: "Keynote Speaker",
+      institution: "TBA",
       image:
         "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
     },
     {
-      name: "Qing Nie, Ph.D.",
-      title: "UC Presidential Chair, Distinguished Professor",
-      institution: "University of California, Irvine",
+      name: "To Be Announced",
+      title: "Keynote Speaker",
+      institution: "TBA",
       image:
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
     },
@@ -233,7 +205,7 @@ function HomePage() {
       <section className="relative bg-gradient-to-r from-[#005bbb] to-[#003d7a] text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=1920&h=600&fit=crop"
+            src="https://www.buffalo.edu/content/www/advancement/work-with-us/about-the-university/_jcr_content/par/image_386387655.img.1920.612.jpg/1654610309624.jpg"
             alt="University at Buffalo Campus"
             className="w-full h-full object-cover"
           />
@@ -244,7 +216,7 @@ function HomePage() {
           <div className="text-center">
             <div className="mb-6">
               <span className="inline-block px-4 py-2 bg-white/10 rounded text-sm font-medium">
-                13th International Conference
+                14th International Conference
               </span>
             </div>
 
@@ -255,16 +227,18 @@ function HomePage() {
             </h1>
 
             <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              ICIBM 2025 brings together eminent scholars and experts from
-              various fields of computational biology, bioinformatics, genomics,
-              data science, AI, biomedical informatics, and related experimental
-              research.
+              ICIBM 2026 brings together leading scholars and experts from
+              bioinformatics, computational biology, systems biology,
+              computational medicine, and experimental biomedical research. The
+              conference provides a collegial and stimulating environment that
+              fosters in-depth discussions, collaborations, and networking among
+              participants from academia, industry, and government.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <div className="bg-white/10 backdrop-blur-sm px-6 py-4 rounded">
                 <div className="text-2xl md:text-3xl font-bold">
-                  August 3-5, 2025
+                  August 2-5, 2026
                 </div>
                 <div className="text-sm">Conference Dates</div>
               </div>
@@ -306,7 +280,7 @@ function HomePage() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {keynoteSpeakers.map((speaker, idx) => (
               <div
                 key={idx}
@@ -341,8 +315,10 @@ function HomePage() {
             Call for Papers
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            We invite submissions of unpublished, original work describing
-            recent advances in intelligent biology and medicine
+            We invite you to submit papers and abstracts presenting original,
+            unpublished work that describes recent advances in all areas of
+            bioinformatics, artificial intelligence, systems biology, and
+            biomedical informatics.
           </p>
           <button
             onClick={() => navigate("/submission")}
@@ -358,12 +334,147 @@ function HomePage() {
 
 // Submission Page
 function SubmissionPage() {
+  const topicsBioinformatics = [
+    "Genomics and genetics/epigenetics, including integrative & functional genomics, genome evolution",
+    "Next-generation sequencing data analysis, 3D genome",
+    "Big data science including storage, analysis, modeling, visualization, and cloud",
+    "Precision medicine, translational bioinformatics",
+    "Drug discovery, design, and re-purposing",
+    "Proteomics, and protein structure prediction, function, and interactions",
+    "Single-cell sequencing data analysis",
+    "Spatial omics data analysis",
+    "Microbiome and metagenomics",
+    "Multi-dimensional omics data integration",
+  ];
+
+  const topicsAI = [
+    "Artificial intelligence, machine learning, deep learning, data mining, knowledge discovery",
+    "Large language model, foundation model, and computer vision in biomedical",
+    "Natural language processing, literature mining, semantic ontology, and health informatics",
+    "Evolutionary computing, swarm intelligence / optimization, ensemble methods",
+    "Artificial life and artificial immune system",
+    "Biomedical image analysis and processing",
+    "Digital health and wearable devices",
+  ];
+
+  const topicsSystemsBiology = [
+    "Modeling and simulation of biological processes, pathways, networks, and interactomes",
+    "Modeling of cellular and multi-cellular interaction systems",
+    "Synthetic biological systems",
+    "Metabolomics, microbiome, and lipidomics",
+    "Self-organization in living systems (cells, organisms, swarms, ecosystems, etc.)",
+  ];
+
+  const topicsBiomedical = [
+    "Cohort discovery, EHR-based phenotyping, predictive modeling",
+    "Data quality assessment or validation",
+    "Clinical decision support solutions",
+    "Informatics to address disparities in health and health care",
+    "Interoperability (e.g., ontology, terminology, standards, and others)",
+    "Machine learning for clinical applications, genome, and phenome analysis/associations",
+    "Mobile health and wearable devices",
+    "Human-computer interaction and human factors",
+  ];
+
   return (
     <div className="py-16 px-4">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold mb-8 text-gray-800">Submission</h1>
 
+        <div className="bg-blue-50 border-l-4 border-[#005bbb] p-6 rounded mb-8">
+          <p className="text-gray-700 text-lg">
+            We invite you to submit papers and abstracts presenting original,
+            unpublished work that describes recent advances in all areas of
+            bioinformatics, artificial intelligence, systems biology, and
+            biomedical informatics.
+          </p>
+        </div>
+
+        {/* Topics Grid */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-12">
+          {/* Bioinformatics */}
+          <div className="bg-white border-2 border-gray-200 rounded p-8">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-[#005bbb]">
+              Bioinformatics and Computational Biology
+            </h3>
+            <ul className="space-y-2">
+              {topicsBioinformatics.map((topic, idx) => (
+                <li key={idx} className="text-gray-700 flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>{topic}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* AI and Machine Learning */}
+          <div className="bg-white border-2 border-gray-200 rounded p-8">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-[#005bbb]">
+              Artificial Intelligence and Machine Learning
+            </h3>
+            <ul className="space-y-2">
+              {topicsAI.map((topic, idx) => (
+                <li key={idx} className="text-gray-700 flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>{topic}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Systems Biology */}
+          <div className="bg-white border-2 border-gray-200 rounded p-8">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-[#005bbb]">
+              Systems Biology
+            </h3>
+            <ul className="space-y-2">
+              {topicsSystemsBiology.map((topic, idx) => (
+                <li key={idx} className="text-gray-700 flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>{topic}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Biomedical Informatics */}
+          <div className="bg-white border-2 border-gray-200 rounded p-8">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-[#005bbb]">
+              Biomedical Informatics
+            </h3>
+            <ul className="space-y-2">
+              {topicsBiomedical.map((topic, idx) => (
+                <li key={idx} className="text-gray-700 flex items-start">
+                  <span className="mr-2">•</span>
+                  <span>{topic}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Paper Submission */}
         <div className="space-y-8">
+          <div className="bg-white border-2 border-gray-200 rounded p-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-[#005bbb]">
+              Paper Submission
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Prospective authors are invited to submit original, unpublished
+                work to ICIBM 2026. Selected papers from registered authors will
+                be considered for publication in special issues of{" "}
+                <strong>Briefings in Bioinformatics</strong>,{" "}
+                <strong>Frontiers in Genetics</strong>,<strong> Cancers</strong>
+                , and the{" "}
+                <strong>
+                  Computational and Structural Biotechnology Journal
+                </strong>
+                .
+              </p>
+            </div>
+          </div>
+
           {/* Abstract Submission */}
           <div className="bg-white border-2 border-gray-200 rounded p-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-[#005bbb]">
@@ -371,109 +482,18 @@ function SubmissionPage() {
             </h2>
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                Conference participants are invited to submit abstracts to ICIBM
-                2025 describing recent advances on all aspects of
-                Bioinformatics, Intelligent Computing, Systems Biology, and
-                Medical Informatics.
-              </p>
-              <p>
-                Abstract submitted to the conference should be formatted using
-                the{" "}
-                <a
-                  href="#"
-                  className="text-[#005bbb] hover:underline font-semibold"
-                >
-                  Abstract Template
-                </a>
-                . The abstract body should be no more than 400 words.
+                Abstracts should be ≤400 words using the conference-provided
+                template. Papers already published or accepted for publication
+                are also welcome.
               </p>
               <p>
                 Please submit your abstract to{" "}
                 <a
-                  href="mailto:icibm2025@gmail.com"
+                  href="mailto:icibm2026@gmail.com"
                   className="text-[#005bbb] hover:underline font-semibold"
                 >
-                  icibm2025@gmail.com
-                </a>{" "}
-                directly.
-              </p>
-            </div>
-          </div>
-
-          {/* Paper Submission */}
-          <div className="bg-white border-2 border-gray-200 rounded p-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-[#005bbb]">
-              Paper Submission and Publication
-            </h2>
-            <div className="space-y-4 text-gray-700 leading-relaxed">
-              <p>
-                Prospective authors are invited to submit unpublished work to
-                ICIBM 2025. Selected papers from registered participants will be
-                recommended for publication in special issues of journals
-                covering bioinformatics, data science, quantitative life
-                science, and biomedical informatics.
-              </p>
-              <p>
-                Please submit your manuscript to{" "}
-                <a
-                  href="#"
-                  className="text-[#005bbb] hover:underline font-semibold"
-                >
-                  EasyChair
-                </a>{" "}
-                conference management system.
-              </p>
-              <p className="font-semibold">
-                Please note: There is no strict manuscript formatting
-                requirement at the time of submission to ICIBM 2025.
-              </p>
-              <div className="bg-blue-50 p-4 rounded mt-4">
-                <h3 className="font-bold mb-2">
-                  Submission and Review Process
-                </h3>
-                <p className="mb-2">The review process includes two stages:</p>
-                <ol className="list-decimal list-inside space-y-2 ml-4">
-                  <li>
-                    <strong>Conference Review:</strong> All submitted
-                    manuscripts will undergo peer review by the ICIBM 2025
-                    Program Committee. Selected papers will be invited for oral
-                    presentation at the conference.
-                  </li>
-                  <li>
-                    <strong>Journal Review:</strong> Accepted papers will be
-                    recommended for publication in the special issues of partner
-                    journals.
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-
-          {/* Workshop Submission */}
-          <div className="bg-white border-2 border-gray-200 rounded p-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-[#005bbb]">
-              Workshop Submission
-            </h2>
-            <div className="space-y-4 text-gray-700 leading-relaxed">
-              <p>
-                Conference participants are invited to submit workshop proposals
-                to ICIBM 2025.
-              </p>
-              <p>
-                Please ensure your submission includes the workshop title, the
-                name of the workshop organizer, a topic abstract, and a proposed
-                schedule spanning 2-3 hours. Additionally, list the confirmed
-                speakers for your workshop, ideally comprising 6-8 speakers.
-              </p>
-              <p>
-                Please submit your workshop proposal to{" "}
-                <a
-                  href="mailto:icibm.common@gmail.com"
-                  className="text-[#005bbb] hover:underline font-semibold"
-                >
-                  icibm.common@gmail.com
-                </a>{" "}
-                directly.
+                  icibm2026@gmail.com
+                </a>
               </p>
             </div>
           </div>
@@ -486,14 +506,12 @@ function SubmissionPage() {
 // Important Dates Page
 function ImportantDatesPage() {
   const dates = [
-    { event: "Deadline for paper submission", date: "April 28, 2025" },
-    { event: "Notification to authors of papers", date: "June 13, 2025" },
-    { event: "Conference early registration opens", date: "May 25, 2025" },
-    { event: "Deadline for abstract submission", date: "June 27, 2025" },
-    { event: "Conference early registration deadline", date: "July 11, 2025" },
-    { event: "Travel award application deadline", date: "July 18, 2025" },
-    { event: "Conference regular registration opens", date: "July 12, 2025" },
-    { event: "ICIBM conference", date: "August 3-5, 2025" },
+    { event: "Paper Submission Deadline", date: "March 31, 2026" },
+    { event: "Notification to Authors", date: "June 1, 2026" },
+    { event: "Abstract Submission Deadline", date: "June 15, 2026" },
+    { event: "Early Registration Opens", date: "June 1, 2026" },
+    { event: "Early Registration Deadline", date: "July 1, 2026" },
+    { event: "ICIBM Conference", date: "August 2-5, 2026" },
   ];
 
   return (
@@ -528,120 +546,25 @@ function RegistrationPage() {
     <div className="py-16 px-4">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold mb-8 text-gray-800">
-          Register for ICIBM 2025
+          Register for ICIBM 2026
         </h1>
 
         <div className="bg-blue-50 border-l-4 border-[#005bbb] p-6 rounded mb-8">
           <p className="text-gray-700">
-            ICIBM 2025 is the official conference organized by the International
-            Association for Intelligent Biology and Medicine (IAIBM). IAIBM is a
-            non-profit organization founded in 2018 to promote the intelligent
-            biology and medical science (EIN: 82-4147182).
+            Registration information will be available soon. Please check back
+            for details on conference registration and fees.
           </p>
         </div>
 
-        <div className="bg-white border-2 border-gray-200 rounded-lg overflow-hidden mb-8">
-          <table className="w-full">
-            <thead className="bg-gray-50">
-              <tr>
-                <th className="px-6 py-4 text-left font-bold text-gray-800">
-                  Registration Package
-                </th>
-                <th className="px-6 py-4 text-center font-bold text-gray-800">
-                  Early Registration
-                  <br />
-                  <span className="text-sm font-normal">
-                    (May 14th - July 11th, 2025)
-                  </span>
-                </th>
-                <th className="px-6 py-4 text-center font-bold text-gray-800">
-                  Standard Registration
-                  <br />
-                  <span className="text-sm font-normal">
-                    (July 12th - August 3rd, 2025)
-                  </span>
-                </th>
-                <th className="px-6 py-4 text-center font-bold text-gray-800">
-                  Registration Links
-                </th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-200">
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 font-semibold">
-                  Regular Registration
-                </td>
-                <td className="px-6 py-4 text-center">US $600</td>
-                <td className="px-6 py-4 text-center">US $700</td>
-                <td className="px-6 py-4 text-center">
-                  <a
-                    href="#"
-                    className="text-[#005bbb] hover:underline font-semibold"
-                  >
-                    Register
-                  </a>
-                </td>
-              </tr>
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 font-semibold">
-                  Student Registration
-                </td>
-                <td className="px-6 py-4 text-center">US $450</td>
-                <td className="px-6 py-4 text-center">US $500</td>
-                <td className="px-6 py-4 text-center">
-                  <a
-                    href="#"
-                    className="text-[#005bbb] hover:underline font-semibold"
-                  >
-                    Student/Postdoc
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div className="space-y-6 text-gray-700">
-          <p>
-            **The regular registration fee includes all seminars,
-            workshops/tutorials, a poster session, and scheduled conference
-            meals and refreshment breaks. The registration fee also includes a
-            free IAIBM regular membership ($100 value) for one year.
-          </p>
-          <p>
-            **The student registration fee includes all seminars,
-            workshops/tutorials, a poster session, and scheduled conference
-            meals and refreshment breaks.{" "}
-            <strong>
-              Student registration is for trainee only, and ID is required
-              during check-in.
-            </strong>{" "}
-            The registration fee also includes a free IAIBM student membership
-            ($25 value) for one year.
-          </p>
-        </div>
-
-        <div className="mt-8 bg-white border-2 border-gray-200 rounded p-8">
+        <div className="bg-white border-2 border-gray-200 rounded p-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            Cancellation Policy
+            Registration Opens
           </h2>
           <p className="text-gray-700 mb-4">
-            Request for registration cancellation must be made in writing and
-            sent to:{" "}
-            <a
-              href="mailto:icibm.common@gmail.com"
-              className="text-[#005bbb] hover:underline font-semibold"
-            >
-              icibm.common@gmail.com
-            </a>
+            Early registration opens on <strong>June 1, 2026</strong>.
           </p>
           <p className="text-gray-700">
-            <strong>Refund Policy:</strong> We do not encourage the cancellation
-            of your registration. However, due to unexpected reasons, if you
-            need to cancel your registration, please include a copy of your
-            registration payment receipt with your request. All refunds will be
-            processed and mailed after the ICIBM 2025. A $50.00 processing fee
-            will be deducted from the paid registration fee.
+            Early registration deadline is <strong>July 1, 2026</strong>.
           </p>
         </div>
       </div>
@@ -668,33 +591,11 @@ function ProgramPage() {
             Conference Schedule Overview
           </h2>
           <div className="space-y-4 text-gray-700">
-            <div>
-              <h3 className="font-bold text-lg mb-2">Day 1 - August 3, 2025</h3>
-              <ul className="list-disc list-inside ml-4 space-y-1">
-                <li>Registration and Welcome Reception</li>
-                <li>Opening Ceremony</li>
-                <li>Keynote Presentations</li>
-                <li>Workshop Sessions</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-2">Day 2 - August 4, 2025</h3>
-              <ul className="list-disc list-inside ml-4 space-y-1">
-                <li>Keynote Presentations</li>
-                <li>Parallel Sessions</li>
-                <li>Poster Session</li>
-                <li>Conference Dinner</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-2">Day 3 - August 5, 2025</h3>
-              <ul className="list-disc list-inside ml-4 space-y-1">
-                <li>Keynote Presentations</li>
-                <li>Parallel Sessions</li>
-                <li>Award Ceremony</li>
-                <li>Closing Remarks</li>
-              </ul>
-            </div>
+            <p>
+              The conference will take place over four days from August 2-5,
+              2026, featuring keynote presentations, parallel sessions,
+              workshops, and poster sessions.
+            </p>
           </div>
         </div>
       </div>
@@ -717,9 +618,19 @@ function OrganizationPage() {
               General Chairs
             </h2>
             <ul className="space-y-2 text-gray-700">
-              <li>Lang Li, The Ohio State University</li>
-              <li>Qin Ma, The Ohio State University</li>
+              <li>Yijun Sun, SUNY Buffalo</li>
+              <li>Qianqian Song, University of Florida</li>
               <li>Zhongming Zhao, UTHealth Houston</li>
+            </ul>
+          </div>
+
+          <div className="bg-white border-2 border-gray-200 rounded p-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4 pb-3 border-b-2 border-[#005bbb]">
+              Keynote Speakers
+            </h2>
+            <ul className="space-y-2 text-gray-700">
+              <li>Gary Bader, University of Toronto</li>
+              <li>Additional speakers to be announced</li>
             </ul>
           </div>
 
@@ -728,8 +639,20 @@ function OrganizationPage() {
               Program Committee
             </h2>
             <ul className="space-y-2 text-gray-700">
-              <li>Lianbo Yu, The Ohio State University</li>
-              <li>Leng Han, Indiana University</li>
+              <li>Michael Buck, SUNY Buffalo</li>
+              <li>Hongbo Liu, University of Rochester</li>
+              <li>Wenyao Xu, SUNY Buffalo</li>
+            </ul>
+          </div>
+
+          <div className="bg-white border-2 border-gray-200 rounded p-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4 pb-3 border-b-2 border-[#005bbb]">
+              Steering Committee
+            </h2>
+            <ul className="space-y-2 text-gray-700">
+              <li>Marc Halterman, SUNY Buffalo</li>
+              <li>Mattia Prosperi, University of Florida</li>
+              <li>Jinjun Xiong, SUNY Buffalo</li>
             </ul>
           </div>
 
@@ -738,41 +661,31 @@ function OrganizationPage() {
               Publication Committee
             </h2>
             <ul className="space-y-2 text-gray-700">
-              <li>Maciej Pietrzak, The Ohio State University</li>
-              <li>Xinghua Mindy Shi, Temple University</li>
+              <li>Li Liu, Arizona State University</li>
+              <li>Dawei Li, Texas Tech University</li>
+              <li>Jun Wan, Indiana University</li>
             </ul>
           </div>
 
           <div className="bg-white border-2 border-gray-200 rounded p-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4 pb-3 border-b-2 border-[#005bbb]">
-              Workshop/Tutorial Committee
+              Workshop and Tutorial Committee
             </h2>
             <ul className="space-y-2 text-gray-700">
-              <li>Hongbo Liu, University of Rochester</li>
-              <li>Yusi Fu, Texas A&M University</li>
-              <li>Qiangian Song, University of Florida</li>
-              <li>Pengyue Zhang, Indiana University</li>
-              <li>Travis Johnson, Indiana University</li>
-              <li>Chi Zhang, Oregon Health & Science University</li>
+              <li>Leng Han, Indiana University</li>
             </ul>
           </div>
 
           <div className="bg-white border-2 border-gray-200 rounded p-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4 pb-3 border-b-2 border-[#005bbb]">
-              Award Committee
+              Session Chairs
             </h2>
             <ul className="space-y-2 text-gray-700">
-              <li>Fuhai Li, Washington University in St. Louis</li>
-            </ul>
-          </div>
-
-          <div className="bg-white border-2 border-gray-200 rounded p-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4 pb-3 border-b-2 border-[#005bbb]">
-              Future Scientist in AI Committee
-            </h2>
-            <ul className="space-y-2 text-gray-700">
-              <li>Chi Zhang, Oregon Health & Science University</li>
-              <li>Jingwen Yan, Indiana University</li>
+              <li>Daofeng Li, Washington University in St. Louis</li>
+              <li>Xueqiu Lin, Fred Hutchinson Cancer Center</li>
+              <li>Jianrong Wang, Michigan State University</li>
+              <li>Li Zhao, Rockefeller University</li>
+              <li>Wanding Zhou, Children's Hospital of Philadelphia</li>
             </ul>
           </div>
         </div>
@@ -863,33 +776,6 @@ function TravelPage() {
 
 // Sponsors Page
 function SponsorsPage() {
-  const platinumSponsors = [
-    {
-      name: "Admera Health",
-      logo: "https://via.placeholder.com/200x80?text=Admera+Health",
-    },
-  ];
-
-  const goldSponsors = [
-    {
-      name: "10x Genomics",
-      logo: "https://via.placeholder.com/150x60?text=10x+Genomics",
-    },
-    {
-      name: "Complete Genomics",
-      logo: "https://via.placeholder.com/150x60?text=Complete+Genomics",
-    },
-    {
-      name: "Computational Biology and Chemistry",
-      logo: "https://via.placeholder.com/150x60?text=CBC",
-    },
-    {
-      name: "Olink Proteomics",
-      logo: "https://via.placeholder.com/150x60?text=Olink",
-    },
-    { name: "Yeasen", logo: "https://via.placeholder.com/150x60?text=Yeasen" },
-  ];
-
   return (
     <div className="py-16 px-4">
       <div className="max-w-6xl mx-auto">
@@ -897,50 +783,15 @@ function SponsorsPage() {
           Sponsors
         </h1>
 
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">
-            Platinum Sponsors
-          </h2>
-          <div className="flex justify-center">
-            <div className="bg-gray-100 p-12 rounded-lg border-2 border-gray-200">
-              <img
-                src={platinumSponsors[0].logo}
-                alt={platinumSponsors[0].name}
-                className="max-w-xs"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">
-            Gold Sponsors
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {goldSponsors.map((sponsor, idx) => (
-              <div
-                key={idx}
-                className="bg-gray-100 p-6 rounded-lg border border-gray-200 flex items-center justify-center"
-              >
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  className="max-w-full"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-12 bg-blue-50 border-l-4 border-[#005bbb] p-6 rounded">
+        <div className="bg-blue-50 border-l-4 border-[#005bbb] p-6 rounded">
           <h3 className="font-bold text-lg mb-2">Interested in Sponsoring?</h3>
           <p className="text-gray-700">
             For sponsorship opportunities, please contact us at{" "}
             <a
-              href="mailto:icibm.common@gmail.com"
+              href="mailto:icibm2026@gmail.com"
               className="text-[#005bbb] hover:underline font-semibold"
             >
-              icibm.common@gmail.com
+              icibm2026@gmail.com
             </a>
           </p>
         </div>
@@ -960,46 +811,27 @@ function ContactPage() {
 
         <div className="bg-white border-2 border-gray-200 rounded-lg p-8 text-center">
           <p className="text-lg text-gray-700 mb-8">
-            For general information please contact{" "}
+            For general information please contact us at{" "}
             <a
-              href="mailto:icibm.common@gmail.com"
+              href="mailto:icibm2026@gmail.com"
               className="text-[#005bbb] hover:underline font-semibold"
             >
-              icibm.common@gmail.com
-            </a>{" "}
-            or{" "}
-            <a
-              href="#"
-              className="text-[#005bbb] hover:underline font-semibold"
-            >
-              Lianbo Yu
+              icibm2026@gmail.com
             </a>
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-4 text-gray-800">
-                Paper Submissions
-              </h3>
+          <div className="mt-8 text-gray-700">
+            <p className="mb-2">
+              <strong>Website:</strong>{" "}
               <a
-                href="mailto:icibm2025@gmail.com"
+                href="http://icibm2026.iaibm.org"
                 className="text-[#005bbb] hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                icibm2025@gmail.com
+                icibm2026.iaibm.org
               </a>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-4 text-gray-800">
-                General Inquiries
-              </h3>
-              <a
-                href="mailto:icibm.common@gmail.com"
-                className="text-[#005bbb] hover:underline"
-              >
-                icibm.common@gmail.com
-              </a>
-            </div>
+            </p>
           </div>
         </div>
       </div>
