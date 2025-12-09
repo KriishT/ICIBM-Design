@@ -34,7 +34,7 @@ function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <span className="flex items-center gap-2">
               <Calendar size={16} />
-              August 3-5, 2025
+              December 20-21, 2025
             </span>
             <span className="flex items-center gap-2">
               <MapPin size={16} />
@@ -254,7 +254,7 @@ function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <div className="bg-white/10 backdrop-blur-sm px-6 py-4 rounded">
                 <div className="text-2xl md:text-3xl font-bold">
-                  August 3-5, 2025
+                  December 20-21, 2025
                 </div>
                 <div className="text-sm">Conference Dates</div>
               </div>
@@ -476,14 +476,14 @@ function SubmissionPage() {
 // Important Dates Page
 function ImportantDatesPage() {
   const dates = [
-    { event: "Deadline for paper submission", date: "April 28, 2025" },
-    { event: "Notification to authors of papers", date: "June 13, 2025" },
-    { event: "Conference early registration opens", date: "May 25, 2025" },
-    { event: "Deadline for abstract submission", date: "June 27, 2025" },
-    { event: "Conference early registration deadline", date: "July 11, 2025" },
-    { event: "Travel award application deadline", date: "July 18, 2025" },
-    { event: "Conference regular registration opens", date: "July 12, 2025" },
-    { event: "ICIBM conference", date: "August 3-5, 2025" },
+    { event: "Deadline for paper submission", date: "Aug 21, 2025" },
+    { event: "Notification to authors of papers", date: "Sept 05, 2025" },
+    { event: "Conference early registration opens", date: "Sept 22, 2025" },
+    { event: "Deadline for abstract submission", date: "Oct 12, 2025" },
+    { event: "Conference early registration deadline", date: "Oct 22, 2025" },
+    { event: "Travel award application deadline", date: "Nov 24, 2025" },
+    { event: "Conference regular registration opens", date: "Dec 08, 2025" },
+    { event: "ICIBM conference", date: "December 20-21, 2025" },
   ];
 
   return (
@@ -548,7 +548,7 @@ function RegistrationPage() {
                   Standard Registration
                   <br />
                   <span className="text-sm font-normal">
-                    (July 12th - August 3rd, 2025)
+                    (Sept 22 - Dec 21, 2025)
                   </span>
                 </th>
                 <th className="px-6 py-4 text-center font-bold text-gray-800">
@@ -659,7 +659,9 @@ function ProgramPage() {
           </h2>
           <div className="space-y-4 text-gray-700">
             <div>
-              <h3 className="font-bold text-lg mb-2">Day 1 - August 3, 2025</h3>
+              <h3 className="font-bold text-lg mb-2">
+                Day 1 - December 20, 2025
+              </h3>
               <ul className="list-disc list-inside ml-4 space-y-1">
                 <li>Registration and Welcome Reception</li>
                 <li>Opening Ceremony</li>
@@ -668,7 +670,9 @@ function ProgramPage() {
               </ul>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-2">Day 2 - August 4, 2025</h3>
+              <h3 className="font-bold text-lg mb-2">
+                Day 2 - December 21, 2025
+              </h3>
               <ul className="list-disc list-inside ml-4 space-y-1">
                 <li>Keynote Presentations</li>
                 <li>Parallel Sessions</li>
@@ -677,7 +681,9 @@ function ProgramPage() {
               </ul>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-2">Day 3 - August 5, 2025</h3>
+              <h3 className="font-bold text-lg mb-2">
+                Day 3 - December 22, 2025
+              </h3>
               <ul className="list-disc list-inside ml-4 space-y-1">
                 <li>Keynote Presentations</li>
                 <li>Parallel Sessions</li>
